@@ -39,12 +39,15 @@
     <div>Lorem Ipsum is simply dummy text</div>
     <script>
         let isOn = true;
-        document.getElementById("showBtn").addEventListener("click",fuction(){
+        document
+        .getElementById("showBtn")
+        .addEventListener("click",function(){
             if(isOn){
                 document.getElementById("one").style.display = "block";
                 isOn = false;
             }else {
                 document.getElementById("one").style.display = "none";
+                isOn = true;
             }    
         
         });
